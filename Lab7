@@ -1,0 +1,848 @@
+vboxuser@ubuntu:~$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.3  23192  7296 ?        Ss   21:11   0:05 /sbin/init sp
+root           2  0.0  0.0      0     0 ?        S    21:11   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    21:11   0:00 [pool_workque
+root           4  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-rc
+root           5  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-rc
+root           6  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-sl
+root           7  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-ne
+root           9  0.0  0.0      0     0 ?        I    21:11   0:02 [kworker/0:1-
+root          10  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/0:0H
+root          11  0.1  0.0      0     0 ?        I    21:11   0:06 [kworker/u2:0
+root          12  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-mm
+root          13  0.0  0.0      0     0 ?        I    21:11   0:00 [rcu_tasks_kt
+root          14  0.0  0.0      0     0 ?        I    21:11   0:00 [rcu_tasks_ru
+root          15  0.0  0.0      0     0 ?        I    21:11   0:00 [rcu_tasks_tr
+root          16  0.0  0.0      0     0 ?        S    21:11   0:01 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    21:11   0:02 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    21:11   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    21:11   0:00 [idle_inject/
+root          20  0.0  0.0      0     0 ?        S    21:11   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    21:11   0:00 [kdevtmpfs]
+root          22  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-in
+root          24  0.0  0.0      0     0 ?        S    21:11   0:00 [kauditd]
+root          25  0.0  0.0      0     0 ?        S    21:11   0:00 [khungtaskd]
+root          26  0.0  0.0      0     0 ?        S    21:11   0:00 [oom_reaper]
+root          28  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-wr
+root          29  0.0  0.0      0     0 ?        S    21:11   0:00 [kcompactd0]
+root          30  0.0  0.0      0     0 ?        SN   21:11   0:00 [ksmd]
+root          31  0.0  0.0      0     0 ?        SN   21:11   0:00 [khugepaged]
+root          32  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-ki
+root          33  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-kb
+root          34  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-bl
+root          35  0.0  0.0      0     0 ?        S    21:11   0:00 [irq/9-acpi]
+root          36  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-tp
+root          37  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-at
+root          38  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-md
+root          39  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-md
+root          40  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-ed
+root          41  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-de
+root          42  0.0  0.0      0     0 ?        S    21:11   0:00 [watchdogd]
+root          43  0.0  0.0      0     0 ?        I<   21:11   0:01 [kworker/0:1H
+root          44  0.2  0.0      0     0 ?        S    21:11   0:11 [kswapd0]
+root          45  0.0  0.0      0     0 ?        S    21:11   0:00 [ecryptfs-kth
+root          46  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-kt
+root          47  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-ac
+root          48  0.0  0.0      0     0 ?        S    21:11   0:00 [scsi_eh_0]
+root          49  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-sc
+root          50  0.0  0.0      0     0 ?        S    21:11   0:00 [scsi_eh_1]
+root          51  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-sc
+root          54  0.1  0.0      0     0 ?        I    21:11   0:05 [kworker/u2:5
+root          55  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-ml
+root          56  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-ip
+root          64  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-ks
+root          66  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/u3:0
+root          79  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-ch
+root         122  0.0  0.0      0     0 ?        S    21:11   0:00 [scsi_eh_2]
+root         123  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-sc
+root         174  0.0  0.0      0     0 ?        S    21:11   0:00 [jbd2/sda2-8]
+root         175  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-ex
+root         224  0.0  0.2  67220  5328 ?        S<s  21:11   0:00 /usr/lib/syst
+root         289  0.0  0.2  30432  4312 ?        Ss   21:11   0:00 /usr/lib/syst
+systemd+     358  0.0  0.1  17556  2432 ?        Ss   21:11   0:01 /usr/lib/syst
+systemd+     362  0.0  0.1  21580  3968 ?        Ss   21:11   0:00 /usr/lib/syst
+root         367  0.0  0.0      0     0 ?        S    21:11   0:00 [psimon]
+systemd+     375  0.0  0.1  91044  2560 ?        Ssl  21:11   0:00 /usr/lib/syst
+avahi        501  0.0  0.0   8664  1408 ?        Ss   21:11   0:00 avahi-daemon:
+message+     502  0.0  0.2  12108  4096 ?        Ss   21:11   0:02 @dbus-daemon 
+gnome-r+     512  0.0  0.1 365340  2492 ?        Ssl  21:11   0:00 /usr/libexec/
+polkitd      531  0.0  0.3 399432  6408 ?        Ssl  21:11   0:01 /usr/lib/polk
+root         545  0.0  0.0 322196   768 ?        Ssl  21:11   0:00 /usr/libexec/
+root         560  0.2  0.6 1851852 13640 ?       Ssl  21:11   0:12 /usr/lib/snap
+root         562  0.0  0.0 321960  1504 ?        Ssl  21:11   0:00 /usr/libexec/
+root         564  0.0  0.0  18092  1536 ?        Ss   21:11   0:00 /usr/sbin/cro
+root         565  0.0  0.0 318528   896 ?        Ssl  21:11   0:00 /usr/libexec/
+root         578  0.0  0.1  18160  2944 ?        Ss   21:11   0:00 /usr/lib/syst
+root         583  0.0  0.2 469240  4848 ?        Ssl  21:11   0:00 /usr/libexec/
+avahi        649  0.0  0.0   8476   268 ?        S    21:11   0:00 avahi-daemon:
+root         654  0.0  0.2 345020  5740 ?        Ssl  21:11   0:00 /usr/sbin/Net
+root         666  0.0  0.0  17376  1152 ?        Ss   21:11   0:00 /usr/sbin/wpa
+syslog       674  0.0  0.1 222564  2432 ?        Ssl  21:11   0:00 /usr/sbin/rsy
+root         711  0.0  0.1 392028  2080 ?        Ssl  21:11   0:00 /usr/sbin/Mod
+root         752  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-cr
+root         763  0.0  0.0      0     0 ?        S    21:11   0:00 [irq/18-vmwgf
+root         766  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/R-tt
+root        1089  0.0  0.1  46904  2176 ?        Ss   21:11   0:00 /usr/sbin/cup
+root        1092  0.0  0.4 120904  9472 ?        Ssl  21:11   0:00 /usr/bin/pyth
+root        1107  0.0  0.0 323492  1152 ?        Ssl  21:11   0:00 /usr/sbin/gdm
+cups-br+    1111  0.0  0.1 268404  3840 ?        Ssl  21:11   0:00 /usr/sbin/cup
+kernoops    1117  0.0  0.0  12744  1304 ?        Ss   21:11   0:00 /usr/sbin/ker
+kernoops    1123  0.0  0.0  12744  1316 ?        Ss   21:11   0:00 /usr/sbin/ker
+rtkit       1166  0.0  0.0  22940  1536 ?        SNsl 21:11   0:00 /usr/libexec/
+colord      1266  0.0  0.2 328724  4716 ?        Ssl  21:11   0:00 /usr/libexec/
+root        1302  0.0  0.2 325604  4224 ?        Ssl  21:11   0:01 /usr/libexec/
+root        1610  0.0  0.0 251248  1536 ?        Sl   21:12   0:00 gdm-session-w
+vboxuser    1636  0.0  0.3  21484  7424 ?        Ss   21:12   0:03 /usr/lib/syst
+vboxuser    1639  0.0  0.0  21456  1804 ?        S    21:12   0:00 (sd-pam)
+vboxuser    1652  0.0  0.3 124164  6272 ?        S<sl 21:12   0:00 /usr/bin/pipe
+vboxuser    1654  0.0  0.0 106404   896 ?        Ssl  21:12   0:00 /usr/bin/pipe
+vboxuser    1660  0.0  0.3 415492  6656 ?        S<sl 21:12   0:00 /usr/bin/wire
+vboxuser    1663  0.0  0.2 128676  4860 ?        S<sl 21:12   0:00 /usr/bin/pipe
+vboxuser    1664  0.0  0.2 325176  4992 ?        SLsl 21:12   0:00 /usr/bin/gnom
+vboxuser    1672  0.0  0.1  10972  3932 ?        Ss   21:12   0:01 /usr/bin/dbus
+vboxuser    1680  0.0  0.1 628188  3584 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1702  0.0  0.0 244336   512 tty2     Ssl+ 21:12   0:00 /usr/libexec/
+vboxuser    1710  0.0  0.1 306876  2048 tty2     Sl+  21:12   0:00 /usr/libexec/
+vboxuser    1771  0.0  0.1 317976  2432 ?        Ssl  21:12   0:00 /usr/libexec/
+root        1784  0.0  0.0   2704   128 ?        Ss   21:12   0:00 fusermount3 -
+vboxuser    1797  0.0  0.0 162652   768 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1798  0.0  0.0 100216   512 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1805  0.0  0.2 322960  4352 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1818  0.0  0.0 468380   896 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    1829  0.0  0.1 676592  2816 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1863  4.8 15.4 3520676 311076 ?      Ssl  21:12   3:29 /usr/bin/gnom
+vboxuser    1864  0.0  0.1 382936  2688 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    1877  0.0  0.1   9608  2304 ?        S    21:12   0:00 /usr/bin/dbus
+vboxuser    1931  0.0  0.0 236068  1664 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    1950  0.0  0.1 654712  2688 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    1957  0.0  0.4 808040  8192 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1968  0.0  0.2 2528008 4864 ?        Sl   21:12   0:00 /usr/bin/gjs 
+vboxuser    1977  0.1  0.3 397508  7520 ?        Ssl  21:12   0:08 /usr/bin/ibus
+vboxuser    1978  0.0  0.0 392184   640 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1979  0.0  0.2 421568  4996 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1981  0.0  0.0 440336  1408 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1982  0.0  0.1 467564  2560 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1984  0.0  0.2 420424  4228 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1985  0.0  0.3 602808  6404 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1987  0.0  0.3 675300  7684 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1988  0.0  0.0 332312  1536 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1992  0.0  0.0 539752   768 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1993  0.0  0.0 318228   640 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1994  0.0  0.1 555320  3712 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    1995  0.0  0.0 551860  1664 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1996  0.0  0.0 394484  1024 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1997  0.0  0.0 402304  1280 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    1998  0.0  0.2 495128  4868 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2004  0.0  0.0 305624  1280 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    2028  0.0  0.7 817764 14980 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    2147  0.0  0.1 702828  3456 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2202  0.0  0.1 424872  2048 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    2224  0.0  0.1 471692  3456 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2233  0.0  0.0 397796  1792 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    2253  0.0  0.2 694696  4096 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2258  0.0  0.0 245316   768 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    2263  0.1  0.7 430156 14264 ?        Sl   21:12   0:07 /usr/libexec/
+vboxuser    2267  0.0  0.1 319096  2432 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    2269  0.0  0.1 319428  2560 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2292  0.0  0.1 318460  2432 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2297  0.0  0.1 318440  2560 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2302  0.0  0.1 398044  2816 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2325  0.0  0.1 245440  3200 ?        Sl   21:12   0:02 /usr/libexec/
+vboxuser    2349  0.0  0.1 230208  3200 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2359  0.0  0.0 245008   640 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2360  0.0  0.1 544380  3456 ?        Sl   21:12   0:00 /usr/libexec/
+vboxuser    2397  0.0  0.3 644744  6832 ?        Ssl  21:12   0:00 /usr/libexec/
+root        2434  0.0  0.0      0     0 ?        I<   21:12   0:00 [kworker/u3:1
+vboxuser    2447  0.0  0.6 685900 12584 ?        SNsl 21:12   0:01 /usr/libexec/
+vboxuser    2448  0.3  8.9 1133448 181088 ?      Ssl  21:12   0:13 /usr/libexec/
+vboxuser    2488  0.0  0.2 2536128 4908 ?        Sl   21:12   0:00 /usr/bin/gjs 
+vboxuser    2516  0.0  0.4 426444  9576 ?        Ssl  21:12   0:00 /usr/libexec/
+vboxuser    2532  0.0  1.5 2814952 30488 ?       Sl   21:13   0:03 gjs /usr/shar
+vboxuser    2629  0.0  0.4 503636  9988 ?        Sl   21:13   0:00 /usr/bin/upda
+root        3236  0.0  0.0      0     0 ?        S    21:17   0:00 [psimon]
+vboxuser    3343  0.0  0.0  39128  1536 ?        Ss   21:17   0:00 /snap/snapd-d
+vboxuser    3465  0.0  0.4 429584  8792 ?        Sl   21:17   0:00 /snap/snapd-d
+root        3517  0.0  0.0      0     0 ?        I    21:26   0:01 [kworker/0:2-
+vboxuser   22146  0.7  7.5 1178352 151436 ?      Sl   21:33   0:24 /usr/bin/naut
+vboxuser   22165  0.0  0.6 216420 12280 ?        S    21:33   0:00 /usr/bin/Xway
+vboxuser   22169  0.0  0.8 622472 17196 ?        Ssl  21:33   0:00 /usr/libexec/
+vboxuser   22190  0.0  0.3 275780  8008 ?        Sl   21:33   0:00 /usr/libexec/
+vboxuser   22196  0.0  1.2 803816 24204 ?        Sl   21:33   0:00 /usr/libexec/
+vboxuser   22210  0.0  0.1 323168  2688 ?        Sl   21:33   0:00 /usr/libexec/
+root       22418  0.1  5.5 596972 112864 ?       Ssl  21:52   0:03 /usr/libexec/
+root       22598  0.2  0.0      0     0 ?        I    22:05   0:03 [kworker/u2:2
+vboxuser   22742  0.0  0.2 470996  4224 ?        Sl   22:14   0:00 /usr/libexec/
+vboxuser   22760  0.0  0.2 399216  4096 ?        Sl   22:14   0:00 /usr/libexec/
+root       22872  0.8  0.0      0     0 ?        I    22:15   0:04 [kworker/u2:3
+vboxuser   22976  0.0  0.3 1686996 6144 ?        Sl   22:15   0:00 /usr/bin/snap
+root       23536  0.0  0.0      0     0 ?        I    22:15   0:00 [kworker/0:3-
+vboxuser   23846  7.6 11.8 3099480 238816 ?      Sl   22:17   0:33 /snap/firefox
+vboxuser   23948  0.0  0.6 208024 13568 ?        Sl   22:17   0:00 /snap/firefox
+vboxuser   23963  0.3  2.5 2447672 51300 ?       Sl   22:17   0:01 /snap/firefox
+vboxuser   24158  0.2  1.5 2419496 31624 ?       Sl   22:17   0:00 /snap/firefox
+vboxuser   24492  0.0  0.8 344928 17664 ?        Sl   22:17   0:00 /snap/firefox
+vboxuser   24501  8.8  8.3 6887712 167964 ?      Sl   22:17   0:37 /snap/firefox
+vboxuser   24509  0.2  1.7 2413624 34456 ?       Sl   22:17   0:01 /snap/firefox
+vboxuser   24640  1.4  1.1 346964 22432 ?        Sl   22:18   0:05 /snap/firefox
+vboxuser   25043  4.4  2.8 2705788 58396 ?       Sl   22:24   0:00 /usr/bin/gjs-
+vboxuser   25045  4.6  2.3 574600 46856 ?        Sl   22:24   0:00 /usr/bin/gnom
+vboxuser   25049  2.4  1.4 507876 29312 ?        Sl   22:24   0:00 /usr/libexec/
+vboxuser   25115 17.0  2.5 562288 51964 ?        Ssl  22:24   0:01 /usr/libexec/
+vboxuser   25126  0.6  0.2  19692  5248 pts/0    Ss   22:24   0:00 bash
+vboxuser   25141 66.6  0.2  22416  4736 pts/0    R+   22:24   0:00 ps aux
+vboxuser@ubuntu:~$ ps -e -o pid,ppid,cmd
+    PID    PPID CMD
+      1       0 /sbin/init splash
+      2       0 [kthreadd]
+      3       2 [pool_workqueue_release]
+      4       2 [kworker/R-rcu_g]
+      5       2 [kworker/R-rcu_p]
+      6       2 [kworker/R-slub_]
+      7       2 [kworker/R-netns]
+      9       2 [kworker/0:1-events]
+     10       2 [kworker/0:0H-events_highpri]
+     11       2 [kworker/u2:0-events_power_efficient]
+     12       2 [kworker/R-mm_pe]
+     13       2 [rcu_tasks_kthread]
+     14       2 [rcu_tasks_rude_kthread]
+     15       2 [rcu_tasks_trace_kthread]
+     16       2 [ksoftirqd/0]
+     17       2 [rcu_preempt]
+     18       2 [migration/0]
+     19       2 [idle_inject/0]
+     20       2 [cpuhp/0]
+     21       2 [kdevtmpfs]
+     22       2 [kworker/R-inet_]
+     24       2 [kauditd]
+     25       2 [khungtaskd]
+     26       2 [oom_reaper]
+     28       2 [kworker/R-write]
+     29       2 [kcompactd0]
+     30       2 [ksmd]
+     31       2 [khugepaged]
+     32       2 [kworker/R-kinte]
+     33       2 [kworker/R-kbloc]
+     34       2 [kworker/R-blkcg]
+     35       2 [irq/9-acpi]
+     36       2 [kworker/R-tpm_d]
+     37       2 [kworker/R-ata_s]
+     38       2 [kworker/R-md]
+     39       2 [kworker/R-md_bi]
+     40       2 [kworker/R-edac-]
+     41       2 [kworker/R-devfr]
+     42       2 [watchdogd]
+     43       2 [kworker/0:1H-kblockd]
+     44       2 [kswapd0]
+     45       2 [ecryptfs-kthread]
+     46       2 [kworker/R-kthro]
+     47       2 [kworker/R-acpi_]
+     48       2 [scsi_eh_0]
+     49       2 [kworker/R-scsi_]
+     50       2 [scsi_eh_1]
+     51       2 [kworker/R-scsi_]
+     54       2 [kworker/u2:5-events_power_efficient]
+     55       2 [kworker/R-mld]
+     56       2 [kworker/R-ipv6_]
+     64       2 [kworker/R-kstrp]
+     66       2 [kworker/u3:0-ttm]
+     79       2 [kworker/R-charg]
+    122       2 [scsi_eh_2]
+    123       2 [kworker/R-scsi_]
+    174       2 [jbd2/sda2-8]
+    175       2 [kworker/R-ext4-]
+    224       1 /usr/lib/systemd/systemd-journald
+    289       1 /usr/lib/systemd/systemd-udevd
+    358       1 /usr/lib/systemd/systemd-oomd
+    362       1 /usr/lib/systemd/systemd-resolved
+    367       2 [psimon]
+    375       1 /usr/lib/systemd/systemd-timesyncd
+    501       1 avahi-daemon: running [ubuntu.local]
+    502       1 @dbus-daemon --system --address=systemd: --nofork --nopidfile --
+    512       1 /usr/libexec/gnome-remote-desktop-daemon --system
+    531       1 /usr/lib/polkit-1/polkitd --no-debug
+    545       1 /usr/libexec/power-profiles-daemon
+    560       1 /usr/lib/snapd/snapd
+    562       1 /usr/libexec/accounts-daemon
+    564       1 /usr/sbin/cron -f -P
+    565       1 /usr/libexec/switcheroo-control
+    578       1 /usr/lib/systemd/systemd-logind
+    583       1 /usr/libexec/udisks2/udisksd
+    649     501 avahi-daemon: chroot helper
+    654       1 /usr/sbin/NetworkManager --no-daemon
+    666       1 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=
+    674       1 /usr/sbin/rsyslogd -n -iNONE
+    711       1 /usr/sbin/ModemManager
+    752       2 [kworker/R-crypt]
+    763       2 [irq/18-vmwgfx]
+    766       2 [kworker/R-ttm]
+   1089       1 /usr/sbin/cupsd -l
+   1092       1 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgra
+   1107       1 /usr/sbin/gdm3
+   1111       1 /usr/sbin/cups-browsed
+   1117       1 /usr/sbin/kerneloops --test
+   1123       1 /usr/sbin/kerneloops
+   1166       1 /usr/libexec/rtkit-daemon
+   1266       1 /usr/libexec/colord
+   1302       1 /usr/libexec/upowerd
+   1610    1107 gdm-session-worker [pam/gdm-password]
+   1636       1 /usr/lib/systemd/systemd --user
+   1639    1636 (sd-pam)
+   1652    1636 /usr/bin/pipewire
+   1654    1636 /usr/bin/pipewire -c filter-chain.conf
+   1660    1636 /usr/bin/wireplumber
+   1663    1636 /usr/bin/pipewire-pulse
+   1664    1636 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,s
+   1672    1636 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nop
+   1680    1636 /usr/libexec/xdg-document-portal
+   1702    1610 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ub
+   1710    1702 /usr/libexec/gnome-session-binary --session=ubuntu
+   1771    1636 /usr/libexec/xdg-permission-store
+   1784    1680 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtyp
+   1797    1636 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+   1798    1636 /usr/libexec/gnome-session-ctl --monitor
+   1805    1636 /usr/libexec/gvfsd
+   1818    1636 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   1829    1636 /usr/libexec/gnome-session-binary --systemd-service --session=ub
+   1863    1636 /usr/bin/gnome-shell
+   1864    1829 /usr/libexec/at-spi-bus-launcher --launch-immediately
+   1877    1864 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/a
+   1931    1636 /usr/libexec/at-spi2-registryd --use-gnome-session
+   1950    1636 /usr/libexec/gnome-shell-calendar-server
+   1957    1636 /usr/libexec/evolution-source-registry
+   1968    1636 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notificat
+   1977    1636 /usr/bin/ibus-daemon --panel disable
+   1978    1636 /usr/libexec/gsd-a11y-settings
+   1979    1636 /usr/libexec/gsd-color
+   1981    1636 /usr/libexec/gsd-datetime
+   1982    1636 /usr/libexec/gsd-housekeeping
+   1984    1636 /usr/libexec/gsd-keyboard
+   1985    1636 /usr/libexec/gsd-media-keys
+   1987    1636 /usr/libexec/gsd-power
+   1988    1636 /usr/libexec/gsd-print-notifications
+   1992    1636 /usr/libexec/gsd-rfkill
+   1993    1636 /usr/libexec/gsd-screensaver-proxy
+   1994    1636 /usr/libexec/goa-daemon
+   1995    1636 /usr/libexec/gsd-sharing
+   1996    1636 /usr/libexec/gsd-smartcard
+   1997    1636 /usr/libexec/gsd-sound
+   1998    1636 /usr/libexec/gsd-wacom
+   2004    1829 /usr/libexec/gsd-disk-utility-notify
+   2028    1829 /usr/libexec/evolution-data-server/evolution-alarm-notify
+   2147    1636 /usr/libexec/evolution-calendar-factory
+   2202    1636 /usr/libexec/gsd-printer
+   2224    1636 /usr/libexec/gvfs-udisks2-volume-monitor
+   2233    1636 /usr/libexec/goa-identity-service
+   2253    1636 /usr/libexec/evolution-addressbook-factory
+   2258    1977 /usr/libexec/ibus-memconf
+   2263    1977 /usr/libexec/ibus-extension-gtk3
+   2267    1636 /usr/libexec/ibus-portal
+   2269    1636 /usr/libexec/gvfs-gphoto2-volume-monitor
+   2292    1636 /usr/libexec/gvfs-mtp-volume-monitor
+   2297    1636 /usr/libexec/gvfs-goa-volume-monitor
+   2302    1636 /usr/libexec/gvfs-afc-volume-monitor
+   2325    1977 /usr/libexec/ibus-engine-simple
+   2349    1636 /usr/libexec/dconf-service
+   2359    1636 /usr/libexec/gvfsd-metadata
+   2360    1805 /usr/libexec/gvfsd-trash --spawner :1.19 /org/gtk/gvfs/exec_spaw
+   2397    1636 /usr/libexec/xdg-desktop-portal
+   2434       2 [kworker/u3:1]
+   2447    1636 /usr/libexec/tracker-miner-fs-3
+   2448    1636 /usr/libexec/xdg-desktop-portal-gnome
+   2488    1636 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+   2516    1636 /usr/libexec/xdg-desktop-portal-gtk
+   2532    1863 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/di
+   2629    1829 /usr/bin/update-notifier
+   3236       2 [psimon]
+   3343    1636 /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integr
+   3465    3343 /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integr
+   3517       2 [kworker/0:2-cgroup_destroy]
+  22146    1636 /usr/bin/nautilus --gapplication-service
+  22165    1863 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /ru
+  22169    1636 /usr/libexec/gsd-xsettings
+  22190    1636 /usr/libexec/ibus-x11
+  22196    1863 /usr/libexec/mutter-x11-frames
+  22210    1805 /usr/libexec/gvfsd-recent --spawner :1.19 /org/gtk/gvfs/exec_spa
+  22418       1 /usr/libexec/fwupd/fwupd
+  22598       2 [kworker/u2:2-events_power_efficient]
+  22742    1805 /usr/libexec/gvfsd-network --spawner :1.19 /org/gtk/gvfs/exec_sp
+  22760    1805 /usr/libexec/gvfsd-dnssd --spawner :1.19 /org/gtk/gvfs/exec_spaw
+  22872       2 [kworker/u2:3-events_unbound]
+  22976    1636 /usr/bin/snap userd
+  23846    1863 /snap/firefox/4793/usr/lib/firefox/firefox
+  23948   23846 /snap/firefox/4793/usr/lib/firefox/firefox -contentproc -parentB
+  23963   23846 /snap/firefox/4793/usr/lib/firefox/firefox -contentproc -childID
+  24158   23846 /snap/firefox/4793/usr/lib/firefox/firefox -contentproc -childID
+  24492   23846 /snap/firefox/4793/usr/lib/firefox/firefox -contentproc -parentB
+  24501   23846 /snap/firefox/4793/usr/lib/firefox/firefox -contentproc -childID
+  24509   23846 /snap/firefox/4793/usr/lib/firefox/firefox -contentproc -childID
+  24640   23846 /snap/firefox/4793/usr/lib/firefox/firefox -contentproc -parentB
+  25115    1636 /usr/libexec/gnome-terminal-server
+  25126   25115 bash
+  25212   25126 ps -e -o pid,ppid,cmd
+vboxuser@ubuntu:~$ pstree -p
+systemd(1)─┬─ModemManager(711)─┬─{ModemManager}(721)
+           │                   ├─{ModemManager}(723)
+           │                   └─{ModemManager}(725)
+           ├─NetworkManager(654)─┬─{NetworkManager}(681)
+           │                     ├─{NetworkManager}(682)
+           │                     └─{NetworkManager}(683)
+           ├─accounts-daemon(562)─┬─{accounts-daemon}(621)
+           │                      ├─{accounts-daemon}(622)
+           │                      └─{accounts-daemon}(624)
+           ├─avahi-daemon(501)───avahi-daemon(649)
+           ├─colord(1266)─┬─{colord}(1272)
+           │              ├─{colord}(1273)
+           │              └─{colord}(1275)
+           ├─cron(564)
+           ├─cups-browsed(1111)─┬─{cups-browsed}(1129)
+           │                    ├─{cups-browsed}(1130)
+           │                    └─{cups-browsed}(1131)
+           ├─cupsd(1089)
+           ├─dbus-daemon(502)
+           ├─fwupd(22418)─┬─{fwupd}(22419)
+           │              ├─{fwupd}(22420)
+           │              ├─{fwupd}(22421)
+           │              ├─{fwupd}(22422)
+           │              └─{fwupd}(22424)
+           ├─gdm3(1107)─┬─gdm-session-wor(1610)─┬─gdm-wayland-ses(1702)─┬─gnome+
+           │            │                       │                       ├─{gdm-+
+           │            │                       │                       ├─{gdm-+
+           │            │                       │                       └─{gdm-+
+           │            │                       ├─{gdm-session-wor}(1611)
+           │            │                       ├─{gdm-session-wor}(1612)
+           │            │                       └─{gdm-session-wor}(1613)
+           │            ├─{gdm3}(1112)
+           │            ├─{gdm3}(1113)
+           │            └─{gdm3}(1114)
+           ├─gnome-remote-de(512)─┬─{gnome-remote-de}(678)
+           │                      ├─{gnome-remote-de}(679)
+           │                      └─{gnome-remote-de}(680)
+           ├─kerneloops(1117)
+           ├─kerneloops(1123)
+           ├─polkitd(531)─┬─{polkitd}(686)
+           │              ├─{polkitd}(687)
+           │              └─{polkitd}(689)
+           ├─power-profiles-(545)─┬─{power-profiles-}(566)
+           │                      ├─{power-profiles-}(567)
+           │                      └─{power-profiles-}(568)
+           ├─rsyslogd(674)─┬─{rsyslogd}(715)
+           │               ├─{rsyslogd}(716)
+           │               └─{rsyslogd}(718)
+           ├─rtkit-daemon(1166)─┬─{rtkit-daemon}(1173)
+           │                    └─{rtkit-daemon}(1174)
+           ├─snapd(560)─┬─{snapd}(573)
+           │            ├─{snapd}(574)
+           │            ├─{snapd}(575)
+           │            ├─{snapd}(632)
+           │            ├─{snapd}(638)
+           │            ├─{snapd}(749)
+           │            ├─{snapd}(2684)
+           │            ├─{snapd}(2687)
+           │            └─{snapd}(3333)
+           ├─switcheroo-cont(565)─┬─{switcheroo-cont}(594)
+           │                      ├─{switcheroo-cont}(595)
+           │                      └─{switcheroo-cont}(599)
+           ├─systemd(1636)─┬─(sd-pam)(1639)
+           │               ├─at-spi2-registr(1931)─┬─{at-spi2-registr}(1933)
+           │               │                       ├─{at-spi2-registr}(1934)
+           │               │                       └─{at-spi2-registr}(1935)
+           │               ├─dbus-daemon(1672)
+           │               ├─dconf-service(2349)─┬─{dconf-service}(2353)
+           │               │                     ├─{dconf-service}(2354)
+           │               │                     └─{dconf-service}(2355)
+           │               ├─evolution-addre(2253)─┬─{evolution-addre}(2260)
+           │               │                       ├─{evolution-addre}(2261)
+           │               │                       ├─{evolution-addre}(2262)
+           │               │                       ├─{evolution-addre}(2266)
+           │               │                       ├─{evolution-addre}(2268)
+           │               │                       └─{evolution-addre}(2274)
+           │               ├─evolution-calen(2147)─┬─{evolution-calen}(2175)
+           │               │                       ├─{evolution-calen}(2176)
+           │               │                       ├─{evolution-calen}(2219)
+           │               │                       ├─{evolution-calen}(2243)
+           │               │                       ├─{evolution-calen}(2244)
+           │               │                       ├─{evolution-calen}(2248)
+           │               │                       ├─{evolution-calen}(2251)
+           │               │                       ├─{evolution-calen}(2252)
+           │               │                       └─{evolution-calen}(2256)
+           │               ├─evolution-sourc(1957)─┬─{evolution-sourc}(1959)
+           │               │                       ├─{evolution-sourc}(1960)
+           │               │                       ├─{evolution-sourc}(1961)
+           │               │                       └─{evolution-sourc}(1962)
+           │               ├─gcr-ssh-agent(1797)─┬─{gcr-ssh-agent}(1806)
+           │               │                     └─{gcr-ssh-agent}(1807)
+           │               ├─gjs(1968)─┬─{gjs}(1973)
+           │               │           ├─{gjs}(1974)
+           │               │           ├─{gjs}(1976)
+           │               │           ├─{gjs}(1980)
+           │               │           └─{gjs}(1983)
+           │               ├─gjs(2488)─┬─{gjs}(2491)
+           │               │           ├─{gjs}(2492)
+           │               │           ├─{gjs}(2493)
+           │               │           ├─{gjs}(2494)
+           │               │           └─{gjs}(2495)
+           │               ├─gnome-keyring-d(1664)─┬─{gnome-keyring-d}(1668)
+           │               │                       ├─{gnome-keyring-d}(1669)
+           │               │                       ├─{gnome-keyring-d}(1670)
+           │               │                       └─{gnome-keyring-d}(1671)
+           │               ├─gnome-session-b(1829)─┬─at-spi-bus-laun(1864)─┬─db+
+           │               │                       │                       ├─{a+
+           │               │                       │                       ├─{a+
+           │               │                       │                       ├─{a+
+           │               │                       │                       └─{a+
+           │               │                       ├─evolution-alarm(2028)─┬─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       └─{e+
+           │               │                       ├─gsd-disk-utilit(2004)─┬─{g+
+           │               │                       │                       ├─{g+
+           │               │                       │                       └─{g+
+           │               │                       ├─update-notifier(2629)─┬─{u+
+           │               │                       │                       ├─{u+
+           │               │                       │                       ├─{u+
+           │               │                       │                       ├─{u+
+           │               │                       │                       └─{u+
+           │               │                       ├─{gnome-session-b}(1831)
+           │               │                       ├─{gnome-session-b}(1832)
+           │               │                       ├─{gnome-session-b}(1833)
+           │               │                       └─{gnome-session-b}(1835)
+           │               ├─gnome-session-c(1798)───{gnome-session-c}(1816)
+           │               ├─gnome-shell(1863)─┬─Xwayland(22165)
+           │               │                   ├─firefox(23846)─┬─Isolated Serv+
+           │               │                   │                ├─Isolated Web +
+           │               │                   │                ├─Privileged Co+
+           │               │                   │                ├─RDD Process(2+
+           │               │                   │                ├─Socket Proces+
+           │               │                   │                ├─Utility Proce+
+           │               │                   │                ├─WebExtensions+
+           │               │                   │                ├─{firefox}(238+
+           │               │                   │                ├─{firefox}(238+
+           │               │                   │                ├─{firefox}(238+
+           │               │                   │                ├─{firefox}(238+
+           │               │                   │                ├─{firefox}(238+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(239+
+           │               │                   │                ├─{firefox}(240+
+           │               │                   │                ├─{firefox}(241+
+           │               │                   │                ├─{firefox}(241+
+           │               │                   │                ├─{firefox}(241+
+           │               │                   │                ├─{firefox}(241+
+           │               │                   │                ├─{firefox}(241+
+           │               │                   │                ├─{firefox}(241+
+           │               │                   │                ├─{firefox}(243+
+           │               │                   │                ├─{firefox}(244+
+           │               │                   │                ├─{firefox}(244+
+           │               │                   │                ├─{firefox}(244+
+           │               │                   │                ├─{firefox}(245+
+           │               │                   │                ├─{firefox}(245+
+           │               │                   │                ├─{firefox}(245+
+           │               │                   │                ├─{firefox}(245+
+           │               │                   │                ├─{firefox}(245+
+           │               │                   │                ├─{firefox}(246+
+           │               │                   │                ├─{firefox}(246+
+           │               │                   │                ├─{firefox}(246+
+           │               │                   │                ├─{firefox}(248+
+           │               │                   │                ├─{firefox}(252+
+           │               │                   │                └─{firefox}(252+
+           │               │                   ├─gjs(2532)─┬─{gjs}(2534)
+           │               │                   │           ├─{gjs}(2535)
+           │               │                   │           ├─{gjs}(2536)
+           │               │                   │           ├─{gjs}(2537)
+           │               │                   │           ├─{gjs}(2538)
+           │               │                   │           ├─{gjs}(2540)
+           │               │                   │           └─{gjs}(2553)
+           │               │                   ├─mutter-x11-fram(22196)─┬─{mutt+
+           │               │                   │                        ├─{mutt+
+           │               │                   │                        ├─{mutt+
+           │               │                   │                        ├─{mutt+
+           │               │                   │                        ├─{mutt+
+           │               │                   │                        └─{mutt+
+           │               │                   ├─{gnome-shell}(1879)
+           │               │                   ├─{gnome-shell}(1880)
+           │               │                   ├─{gnome-shell}(1884)
+           │               │                   ├─{gnome-shell}(1885)
+           │               │                   ├─{gnome-shell}(1886)
+           │               │                   ├─{gnome-shell}(1887)
+           │               │                   ├─{gnome-shell}(1893)
+           │               │                   ├─{gnome-shell}(1904)
+           │               │                   ├─{gnome-shell}(1905)
+           │               │                   ├─{gnome-shell}(1929)
+           │               │                   ├─{gnome-shell}(2351)
+           │               │                   └─{gnome-shell}(22324)
+           │               ├─gnome-shell-cal(1950)─┬─{gnome-shell-cal}(1951)
+           │               │                       ├─{gnome-shell-cal}(1952)
+           │               │                       ├─{gnome-shell-cal}(1954)
+           │               │                       ├─{gnome-shell-cal}(1955)
+           │               │                       ├─{gnome-shell-cal}(1956)
+           │               │                       └─{gnome-shell-cal}(2136)
+           │               ├─gnome-terminal-(25115)─┬─bash(25126)───pstree(2531+
+           │               │                        ├─{gnome-terminal-}(25119)
+           │               │                        ├─{gnome-terminal-}(25120)
+           │               │                        ├─{gnome-terminal-}(25122)
+           │               │                        ├─{gnome-terminal-}(25123)
+           │               │                        └─{gnome-terminal-}(25125)
+           │               ├─goa-daemon(1994)─┬─{goa-daemon}(2226)
+           │               │                  ├─{goa-daemon}(2227)
+           │               │                  ├─{goa-daemon}(2229)
+           │               │                  └─{goa-daemon}(2230)
+           │               ├─goa-identity-se(2233)─┬─{goa-identity-se}(2239)
+           │               │                       ├─{goa-identity-se}(2240)
+           │               │                       └─{goa-identity-se}(2245)
+           │               ├─gsd-a11y-settin(1978)─┬─{gsd-a11y-settin}(2040)
+           │               │                       ├─{gsd-a11y-settin}(2041)
+           │               │                       ├─{gsd-a11y-settin}(2055)
+           │               │                       └─{gsd-a11y-settin}(2081)
+           │               ├─gsd-color(1979)─┬─{gsd-color}(2134)
+           │               │                 ├─{gsd-color}(2135)
+           │               │                 ├─{gsd-color}(2157)
+           │               │                 └─{gsd-color}(2177)
+           │               ├─gsd-datetime(1981)─┬─{gsd-datetime}(2118)
+           │               │                    ├─{gsd-datetime}(2119)
+           │               │                    ├─{gsd-datetime}(2159)
+           │               │                    └─{gsd-datetime}(2188)
+           │               ├─gsd-housekeepin(1982)─┬─{gsd-housekeepin}(2059)
+           │               │                       ├─{gsd-housekeepin}(2067)
+           │               │                       ├─{gsd-housekeepin}(2079)
+           │               │                       └─{gsd-housekeepin}(2109)
+           │               ├─gsd-keyboard(1984)─┬─{gsd-keyboard}(2152)
+           │               │                    ├─{gsd-keyboard}(2153)
+           │               │                    ├─{gsd-keyboard}(2160)
+           │               │                    └─{gsd-keyboard}(2201)
+           │               ├─gsd-media-keys(1985)─┬─{gsd-media-keys}(2178)
+           │               │                      ├─{gsd-media-keys}(2179)
+           │               │                      ├─{gsd-media-keys}(2187)
+           │               │                      └─{gsd-media-keys}(2223)
+           │               ├─gsd-power(1987)─┬─{gsd-power}(2161)
+           │               │                 ├─{gsd-power}(2162)
+           │               │                 ├─{gsd-power}(2168)
+           │               │                 ├─{gsd-power}(2181)
+           │               │                 └─{gsd-power}(3521)
+           │               ├─gsd-print-notif(1988)─┬─{gsd-print-notif}(2098)
+           │               │                       ├─{gsd-print-notif}(2099)
+           │               │                       └─{gsd-print-notif}(2139)
+           │               ├─gsd-printer(2202)─┬─{gsd-printer}(2234)
+           │               │                   ├─{gsd-printer}(2235)
+           │               │                   └─{gsd-printer}(2236)
+           │               ├─gsd-rfkill(1992)─┬─{gsd-rfkill}(2084)
+           │               │                  ├─{gsd-rfkill}(2089)
+           │               │                  └─{gsd-rfkill}(2110)
+           │               ├─gsd-screensaver(1993)─┬─{gsd-screensaver}(2054)
+           │               │                       ├─{gsd-screensaver}(2066)
+           │               │                       └─{gsd-screensaver}(2078)
+           │               ├─gsd-sharing(1995)─┬─{gsd-sharing}(2097)
+           │               │                   ├─{gsd-sharing}(2101)
+           │               │                   ├─{gsd-sharing}(2102)
+           │               │                   └─{gsd-sharing}(2142)
+           │               ├─gsd-smartcard(1996)─┬─{gsd-smartcard}(2076)
+           │               │                     ├─{gsd-smartcard}(2077)
+           │               │                     ├─{gsd-smartcard}(2100)
+           │               │                     └─{gsd-smartcard}(2133)
+           │               ├─gsd-sound(1997)─┬─{gsd-sound}(2083)
+           │               │                 ├─{gsd-sound}(2094)
+           │               │                 ├─{gsd-sound}(2125)
+           │               │                 └─{gsd-sound}(2163)
+           │               ├─gsd-wacom(1998)─┬─{gsd-wacom}(2148)
+           │               │                 ├─{gsd-wacom}(2149)
+           │               │                 ├─{gsd-wacom}(2167)
+           │               │                 └─{gsd-wacom}(2184)
+           │               ├─gsd-xsettings(22169)─┬─{gsd-xsettings}(22171)
+           │               │                      ├─{gsd-xsettings}(22172)
+           │               │                      ├─{gsd-xsettings}(22173)
+           │               │                      └─{gsd-xsettings}(22174)
+           │               ├─gvfs-afc-volume(2302)─┬─{gvfs-afc-volume}(2303)
+           │               │                       ├─{gvfs-afc-volume}(2304)
+           │               │                       ├─{gvfs-afc-volume}(2305)
+           │               │                       └─{gvfs-afc-volume}(2307)
+           │               ├─gvfs-goa-volume(2297)─┬─{gvfs-goa-volume}(2298)
+           │               │                       ├─{gvfs-goa-volume}(2299)
+           │               │                       └─{gvfs-goa-volume}(2300)
+           │               ├─gvfs-gphoto2-vo(2269)─┬─{gvfs-gphoto2-vo}(2285)
+           │               │                       ├─{gvfs-gphoto2-vo}(2286)
+           │               │                       └─{gvfs-gphoto2-vo}(2289)
+           │               ├─gvfs-mtp-volume(2292)─┬─{gvfs-mtp-volume}(2293)
+           │               │                       ├─{gvfs-mtp-volume}(2294)
+           │               │                       └─{gvfs-mtp-volume}(2296)
+           │               ├─gvfs-udisks2-vo(2224)─┬─{gvfs-udisks2-vo}(2237)
+           │               │                       ├─{gvfs-udisks2-vo}(2238)
+           │               │                       ├─{gvfs-udisks2-vo}(2241)
+           │               │                       └─{gvfs-udisks2-vo}(2249)
+           │               ├─gvfsd(1805)─┬─gvfsd-dnssd(22760)─┬─{gvfsd-dnssd}(2+
+           │               │             │                    ├─{gvfsd-dnssd}(2+
+           │               │             │                    └─{gvfsd-dnssd}(2+
+           │               │             ├─gvfsd-network(22742)─┬─{gvfsd-networ+
+           │               │             │                      ├─{gvfsd-networ+
+           │               │             │                      ├─{gvfsd-networ+
+           │               │             │                      └─{gvfsd-networ+
+           │               │             ├─gvfsd-recent(22210)─┬─{gvfsd-recent}+
+           │               │             │                     ├─{gvfsd-recent}+
+           │               │             │                     └─{gvfsd-recent}+
+           │               │             ├─gvfsd-trash(2360)─┬─{gvfsd-trash}(23+
+           │               │             │                   ├─{gvfsd-trash}(23+
+           │               │             │                   ├─{gvfsd-trash}(23+
+           │               │             │                   └─{gvfsd-trash}(23+
+           │               │             ├─{gvfsd}(1810)
+           │               │             ├─{gvfsd}(1811)
+           │               │             └─{gvfsd}(1812)
+           │               ├─gvfsd-fuse(1818)─┬─{gvfsd-fuse}(1821)
+           │               │                  ├─{gvfsd-fuse}(1822)
+           │               │                  ├─{gvfsd-fuse}(1823)
+           │               │                  ├─{gvfsd-fuse}(1824)
+           │               │                  ├─{gvfsd-fuse}(1825)
+           │               │                  └─{gvfsd-fuse}(1828)
+           │               ├─gvfsd-metadata(2359)─┬─{gvfsd-metadata}(2363)
+           │               │                      ├─{gvfsd-metadata}(2364)
+           │               │                      └─{gvfsd-metadata}(2365)
+           │               ├─ibus-daemon(1977)─┬─ibus-engine-sim(2325)─┬─{ibus-+
+           │               │                   │                       ├─{ibus-+
+           │               │                   │                       └─{ibus-+
+           │               │                   ├─ibus-extension-(2263)─┬─{ibus-+
+           │               │                   │                       ├─{ibus-+
+           │               │                   │                       ├─{ibus-+
+           │               │                   │                       └─{ibus-+
+           │               │                   ├─ibus-memconf(2258)─┬─{ibus-mem+
+           │               │                   │                    ├─{ibus-mem+
+           │               │                   │                    └─{ibus-mem+
+           │               │                   ├─{ibus-daemon}(2087)
+           │               │                   ├─{ibus-daemon}(2091)
+           │               │                   └─{ibus-daemon}(2111)
+           │               ├─ibus-portal(2267)─┬─{ibus-portal}(2276)
+           │               │                   ├─{ibus-portal}(2277)
+           │               │                   └─{ibus-portal}(2278)
+           │               ├─ibus-x11(22190)─┬─{ibus-x11}(22192)
+           │               │                 ├─{ibus-x11}(22193)
+           │               │                 └─{ibus-x11}(22194)
+           │               ├─nautilus(22146)─┬─{nautilus}(22148)
+           │               │                 ├─{nautilus}(22149)
+           │               │                 ├─{nautilus}(22150)
+           │               │                 ├─{nautilus}(22152)
+           │               │                 ├─{nautilus}(22159)
+           │               │                 ├─{nautilus}(22160)
+           │               │                 └─{nautilus}(22198)
+           │               ├─pipewire(1652)─┬─{pipewire}(1677)
+           │               │                └─{pipewire}(1687)
+           │               ├─pipewire(1654)─┬─{pipewire}(1678)
+           │               │                └─{pipewire}(1682)
+           │               ├─pipewire-pulse(1663)─┬─{pipewire-pulse}(1683)
+           │               │                      └─{pipewire-pulse}(1703)
+           │               ├─snap(22976)─┬─{snap}(22977)
+           │               │             ├─{snap}(22978)
+           │               │             ├─{snap}(22979)
+           │               │             ├─{snap}(22980)
+           │               │             ├─{snap}(22981)
+           │               │             └─{snap}(22982)
+           │               ├─snapd-desktop-i(3343)───snapd-desktop-i(3465)─┬─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               └─{s+
+           │               ├─tracker-miner-f(2447)─┬─{tracker-miner-f}(2454)
+           │               │                       ├─{tracker-miner-f}(2455)
+           │               │                       ├─{tracker-miner-f}(2456)
+           │               │                       ├─{tracker-miner-f}(2458)
+           │               │                       ├─{tracker-miner-f}(2459)
+           │               │                       ├─{tracker-miner-f}(2460)
+           │               │                       └─{tracker-miner-f}(2461)
+           │               ├─wireplumber(1660)─┬─{wireplumber}(1681)
+           │               │                   ├─{wireplumber}(1685)
+           │               │                   ├─{wireplumber}(1686)
+           │               │                   ├─{wireplumber}(1692)
+           │               │                   └─{wireplumber}(1704)
+           │               ├─xdg-desktop-por(2397)─┬─{xdg-desktop-por}(2398)
+           │               │                       ├─{xdg-desktop-por}(2399)
+           │               │                       ├─{xdg-desktop-por}(2400)
+           │               │                       ├─{xdg-desktop-por}(2515)
+           │               │                       ├─{xdg-desktop-por}(2523)
+           │               │                       └─{xdg-desktop-por}(2524)
+           │               ├─xdg-desktop-por(2448)─┬─{xdg-desktop-por}(2451)
+           │               │                       ├─{xdg-desktop-por}(2452)
+           │               │                       ├─{xdg-desktop-por}(2453)
+           │               │                       ├─{xdg-desktop-por}(2474)
+           │               │                       ├─{xdg-desktop-por}(2497)
+           │               │                       └─{xdg-desktop-por}(23783)
+           │               ├─xdg-desktop-por(2516)─┬─{xdg-desktop-por}(2517)
+           │               │                       ├─{xdg-desktop-por}(2518)
+           │               │                       ├─{xdg-desktop-por}(2520)
+           │               │                       └─{xdg-desktop-por}(2521)
+           │               ├─xdg-document-po(1680)─┬─fusermount3(1784)
+           │               │                       ├─{xdg-document-po}(1731)
+           │               │                       ├─{xdg-document-po}(1732)
+           │               │                       ├─{xdg-document-po}(1761)
+           │               │                       ├─{xdg-document-po}(1783)
+           │               │                       ├─{xdg-document-po}(1785)
+           │               │                       ├─{xdg-document-po}(1786)
+           │               │                       └─{xdg-document-po}(1787)
+           │               └─xdg-permission-(1771)─┬─{xdg-permission-}(1778)
+           │                                       ├─{xdg-permission-}(1779)
+           │                                       └─{xdg-permission-}(1781)
+           ├─systemd-journal(224)
+           ├─systemd-logind(578)
+           ├─systemd-oomd(358)
+           ├─systemd-resolve(362)
+           ├─systemd-timesyn(375)───{systemd-timesyn}(447)
+           ├─systemd-udevd(289)
+           ├─udisksd(583)─┬─{udisksd}(617)
+           │              ├─{udisksd}(618)
+           │              ├─{udisksd}(620)
+           │              ├─{udisksd}(712)
+           │              └─{udisksd}(720)
+           ├─unattended-upgr(1092)───{unattended-upgr}(1127)
+           ├─upowerd(1302)─┬─{upowerd}(1326)
+           │               ├─{upowerd}(1327)
+           │               └─{upowerd}(1328)
+           └─wpa_supplicant(666)
+vboxuser@ubuntu:~$ pstree -p 2098
+{gsd-print-notif}(2098)
+vboxuser@ubuntu:~$ pstree -p 1302
+upowerd(1302)─┬─{upowerd}(1326)
+              ├─{upowerd}(1327)
+              └─{upowerd}(1328)
+vboxuser@ubuntu:~$ pstree -p 22418
+fwupd(22418)─┬─{fwupd}(22419)
+             ├─{fwupd}(22420)
+             ├─{fwupd}(22421)
+             ├─{fwupd}(22422)
+             └─{fwupd}(22424)
+vboxuser@ubuntu:~$ 
+

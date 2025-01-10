@@ -1,0 +1,70 @@
+ubuntu@ubuntu:~$ echo "first file data" > file1
+ubuntu@ubuntu:~$ cp file1 file2
+ubuntu@ubuntu:~$ ln -s file1 file3
+ubuntu@ubuntu:~$ ln file1 file4
+ubuntu@ubuntu:~$ ls -li
+total 48
+ 1207 drwxr-xr-x 2 ubuntu ubuntu 4096 Nov 13  2024 Desktop
+ 1206 drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 21:09 Documents
+ 1208 drwxr-xr-x 3 ubuntu ubuntu 4096 Oct 16 21:09 Downloads
+34068 -rw-rw-r-- 2 ubuntu ubuntu   16 Nov 13 19:46 file1
+34078 -rw-rw-r-- 1 ubuntu ubuntu   16 Nov 13 19:47 file2
+34095 lrwxrwxrwx 1 ubuntu ubuntu    5 Nov 13 19:48 file3 -> file1
+34068 -rw-rw-r-- 2 ubuntu ubuntu   16 Nov 13 19:46 file4
+ 1209 drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Music
+ 1210 drwxr-xr-x 3 ubuntu ubuntu 4096 Oct 16 16:52 Pictures
+ 1212 drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Public
+ 1134 drwx------ 7 ubuntu ubuntu 4096 Oct 16 21:09 snap
+ 1213 drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Templates
+ 1211 drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Videos
+ubuntu@ubuntu:~$ rm file1
+ubuntu@ubuntu:~$ cat file2
+first file data
+ubuntu@ubuntu:~$ cat file3
+cat: file3: No such file or directory
+ubuntu@ubuntu:~$ cat file4
+first file data
+ubuntu@ubuntu:~$ mv file2 file22
+ubuntu@ubuntu:~$ mv file3 file33
+ubuntu@ubuntu:~$ mv file4 file44
+ubuntu@ubuntu:~$ ln -s file22 filelink
+ubuntu@ubuntu:~$ mkdir newdir
+ubuntu@ubuntu:~$ mv file33 filelink newdir/
+ubuntu@ubuntu:~$ touch file55
+ubuntu@ubuntu:~$ chmod 664 file55
+ubuntu@ubuntu:~$ touch file66
+ubuntu@ubuntu:~$ chmod 600 file55
+ubuntu@ubuntu:~$ ls -l
+total 48
+drwxr-xr-x 2 ubuntu ubuntu 4096 Nov 13  2024 Desktop
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 21:09 Documents
+drwxr-xr-x 3 ubuntu ubuntu 4096 Nov 13 19:52 Downloads
+-rw-rw-r-- 1 ubuntu ubuntu   16 Nov 13 19:47 file22
+-rw-rw-r-- 1 ubuntu ubuntu   16 Nov 13 19:46 file44
+-rw------- 1 ubuntu ubuntu    0 Nov 13 20:17 file55
+-rw-rw-r-- 1 ubuntu ubuntu    0 Nov 13 20:18 file66
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Music
+drwxrwxr-x 2 ubuntu ubuntu 4096 Nov 13 20:15 newdir
+drwxr-xr-x 3 ubuntu ubuntu 4096 Oct 16 16:52 Pictures
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Public
+drwx------ 7 ubuntu ubuntu 4096 Oct 16 21:09 snap
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Templates
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Videos
+ubuntu@ubuntu:~$ chmod 664 file66
+ubuntu@ubuntu:~$ ls -l
+total 48
+drwxr-xr-x 2 ubuntu ubuntu 4096 Nov 13  2024 Desktop
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 21:09 Documents
+drwxr-xr-x 3 ubuntu ubuntu 4096 Nov 13 19:52 Downloads
+-rw-rw-r-- 1 ubuntu ubuntu   16 Nov 13 19:47 file22
+-rw-rw-r-- 1 ubuntu ubuntu   16 Nov 13 19:46 file44
+-rw------- 1 ubuntu ubuntu    0 Nov 13 20:17 file55
+-rw-rw-r-- 1 ubuntu ubuntu    0 Nov 13 20:18 file66
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Music
+drwxrwxr-x 2 ubuntu ubuntu 4096 Nov 13 20:15 newdir
+drwxr-xr-x 3 ubuntu ubuntu 4096 Oct 16 16:52 Pictures
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Public
+drwx------ 7 ubuntu ubuntu 4096 Oct 16 21:09 snap
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Templates
+drwxr-xr-x 2 ubuntu ubuntu 4096 Oct 16 18:08 Videos
+

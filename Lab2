@@ -1,0 +1,112 @@
+ubuntu@ubuntu:~$ sudo adduser ksfortune
+info: Adding user ksfortune' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group ksfortune' (1002) ...
+info: Adding new user ksfortune' (1002) with group ksfortune (1002)' ...
+info: Creating home directory /home/ksfortune' ...
+info: Copying files from /etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for ksfortune
+Enter the new value, or press ENTER for the default
+                Full Name []: Xu+20BF
+                Room Number []:
+                Work Phone []:
+                Home Phone []:
+                Other []:
+Is the information correct? [Y/n] Y
+info: Adding new user ksfortune' to supplemental / extra groups users' ...
+info: Adding user ksfortune' to group users' ...
+ubuntu@ubuntu:~$ cat /etc/passwd | grep ksfortune
+ksfortune:x:1002:1002:Xu+20BF,,,:/home/ksfortune:/bin/bash
+ubuntu@ubuntu:~$ sudo deluser ksfortune
+info: Removing crontab ...
+info: Removing user ksfortune' ...
+ubuntu@ubuntu:~$ cat /etc/passwd | grep ksfortune
+ubuntu@ubuntu:~$ sudo addgroup Group
+err: Please enter a username matching the regular expression
+            configured via the NAME_REGEX configuration variable.  Use the
+            --allow-bad-names' option to relax this check or reconfigure
+            NAME_REGEX in configuration.
+ubuntu@ubuntu:~$ sudo addgroup newgroup
+info: Selecting GID from range 1000 to 59999 ...
+info: Adding group newgroup' (GID 1002) ...
+ubuntu@ubuntu:~$ sudo adduser ksfortune
+info: Adding user ksfortune' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group ksfortune' (1003) ...
+info: Adding new user ksfortune' (1003) with group ksfortune (1003)' ...
+warn: The home directory /home/ksfortune' already exists.  Not touching this directory.
+warn: Warning: The home directory /home/ksfortune' does not belong to the user you are currently creating.
+New password:
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password:
+Sorry, passwords do not match.
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for ksfortune
+Enter the new value, or press ENTER for the default
+                Full Name []:   
+                Room Number []:
+                Work Phone []:
+                Home Phone []:
+                Other []:
+Is the information correct? [Y/n] y
+info: Adding new user ksfortune' to supplemental / extra groups users' ...
+info: Adding user ksfortune' to group users' ...
+ubuntu@ubuntu:~$ sudo usermod -g newgroup ksfortune
+ubuntu@ubuntu:~$ cat /etc/passwd | grep ksfortune
+ksfortune:x:1003:1002:,,,:/home/ksfortune:/bin/bash
+ubuntu@ubuntu:~$ groups ksfortune
+ksfortune : newgroup users
+ubuntu@ubuntu:~$ sudo usermod -aG newgroup ksfortune
+ubuntu@ubuntu:~$ sudo deluser ksfortune newgroup
+fatal: You may not remove the user from their primary group.
+ubuntu@ubuntu:~$ sudo usermod -g users ksfortune
+ubuntu@ubuntu:~$ sudo deluser ksfortune newgroup
+info: Removing user ksfortune' from group newgroup' ...
+ubuntu@ubuntu:~$ groups ksfortune
+ksfortune : users
+ubuntu@ubuntu:~$ sudo deluser ksfortune
+info: Removing crontab ...
+info: Removing user ksfortune' ...
+userdel: group ksfortune not removed because it is not the primary group of user ksfortune.
+ubuntu@ubuntu:~$ sudo adduser superuser
+info: Adding user superuser' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group superuser' (1004) ...
+info: Adding new user superuser' (1004) with group superuser (1004)' ...
+info: Creating home directory /home/superuser' ...
+info: Copying files from /etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for superuser
+Enter the new value, or press ENTER for the default
+                Full Name []:
+                Room Number []:
+                Work Phone []:
+                Home Phone []:
+                Other []:
+Is the information correct? [Y/n] y
+info: Adding new user superuser' to supplemental / extra groups users' ...
+info: Adding user superuser' to group users' ...
+ubuntu@ubuntu:~$ sudo usermod -aG sudo superuser
+ubuntu@ubuntu:~$ whoami
+ubuntu
+ubuntu@ubuntu:~$ sudo whoami
+root
+ubuntu@ubuntu:~$ su - superuser
+Password:
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+ 
+superuser@ubuntu:~$ sudo whoami
+[sudo] password for superuser:
+root
+superuser@ubuntu:~$ sudo visudo
+superuser@ubuntu:~$ sudo mkdir /directory1
+superuser@ubuntu:~$ sudo whoami
+root

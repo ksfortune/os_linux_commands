@@ -1,0 +1,75 @@
+ubuntu@ubuntu:~$ sudo groupadd developer
+ubuntu@ubuntu:~$ sudo useradd -m -G developer user1
+ubuntu@ubuntu:~$ sudo useradd -m -G developer user2
+ubuntu@ubuntu:~$ groups user1
+user1 : user1 developer
+ubuntu@ubuntu:~$ groups user2
+user2 : user2 developer
+ubuntu@ubuntu:~$ sudo mkdir /shared/dev
+mkdir: cannot create directory ‘/shared/dev’: No such file or directory
+ubuntu@ubuntu:~$ sudo mkdir -p /shared/dev
+ubuntu@ubuntu:~$ sudo chown :developer /shared/dev
+ubuntu@ubuntu:~$ sudo chmod 2775 /shared/dev
+ubuntu@ubuntu:~$ ls -ld /shared/dev
+drwxrwsr-x 2 root developer 4096 Nov 13 20:32 /shared/dev
+ubuntu@ubuntu:~$ mkdir /shared/dev/files
+mkdir: cannot create directory ‘/shared/dev/files’: Permission denied
+ubuntu@ubuntu:~$ chmod g+rw /shared/dev
+chmod: changing permissions of '/shared/dev': Operation not permitted
+ubuntu@ubuntu:~$ sudo mkdir /shared/dev/files
+ubuntu@ubuntu:~$ sudo chown :developer /shared/dev/files
+ubuntu@ubuntu:~$ sudo chmod 1777 /shared/dev/files
+ubuntu@ubuntu:~$ ls -ld /shared/dev/files
+drwxrwsrwt 2 root developer 4096 Nov 13 21:02 /shared/dev/files
+ubuntu@ubuntu:~$ su user1
+Password: 
+su: Authentication failure
+ubuntu@ubuntu:~$ sudo passwd user1
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is too simplistic/systematic
+Retype new password: 
+Sorry, passwords do not match.
+New password: 
+Retype new password: 
+passwd: password updated successfully
+ubuntu@ubuntu:~$ su user1
+Password: 
+$ echo "Test" > /shared/dev/files/testfile1.txt
+$ exit
+ubuntu@ubuntu:~$ sudo passwd user2
+New password: 
+Retype new password: 
+passwd: password updated successfully
+ubuntu@ubuntu:~$ su user2
+Password: 
+$ rm /shared/dev/files/testfile1.txt
+rm: cannot remove '/shared/dev/files/testfile1.txt': Operation not permitted
+$ exit
+ubuntu@ubuntu:~$ su user1
+Password: 
+$ rm /shared/dev/files/testfile1.txt
+$ exit
+ubuntu@ubuntu:~$ sudo mkdir /shared/secured
+ubuntu@ubuntu:~$ sudo chmod 711 /shared/secured
+ubuntu@ubuntu:~$ ls -ld /shared/secured
+drwx--x--x 2 root root 4096 Nov 13 21:16 /shared/secured
+ubuntu@ubuntu:~$ ls -l /shared/secured
+ls: cannot open directory '/shared/secured': Permission denied
+ubuntu@ubuntu:~$ ls -l /shared/dev/files
+total 0
+ubuntu@ubuntu:~$ echo "Test" > /shared/secured/testfile2.txt
+bash: /shared/secured/testfile2.txt: Permission denied
+ubuntu@ubuntu:~$ su user1
+Password: 
+$ exit    
+ubuntu@ubuntu:~$ sudo echo "Test" > /shared/secured/testfile2.txt
+bash: /shared/secured/testfile2.txt: Permission denied
+ubuntu@ubuntu:~$ sudo touch /shared/secured/testfile2.txt
+ubuntu@ubuntu:~$ su user1
+Password: 
+$ ls -l /shared/secured
+ls: cannot open directory '/shared/secured': Permission denied
+$ ls /shared/secured/testfile2.txt
+/shared/secured/testfile2.txt
+$ exit
+ubuntu@ubuntu:~$ 

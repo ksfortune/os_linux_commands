@@ -1,0 +1,74 @@
+ubuntu@ubuntu:~$ ssh root@80.68.156.82
+root@80.68.156.82's password:
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-122-generic x86_64)
+ 
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+ 
+ System information as of Wed Oct 16 09:50:14 PM MSK 2024
+ 
+  System load:  0.02               Processes:             99
+  Usage of /:   13.6% of 14.68GB   Users logged in:       1
+  Memory usage: 21%                IPv4 address for eth0: 80.68.156.82
+  Swap usage:   0%                 IPv6 address for eth0: 2a03:6f00:4::779f
+ 
+ 
+Expanded Security Maintenance for Applications is not enabled.
+ 
+0 updates can be applied immediately.
+ 
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+ 
+New release '24.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+ 
+ 
+Last login: Wed Oct 16 21:48:45 2024 from 5.144.116.170
+root@3628761-cj43039:~# ls -al ~/.ssh
+total 16
+drwx------ 2 root root 4096 Oct 16 21:49 .
+drwx------ 6 root root 4096 Oct 16 21:42 ..
+-rw------- 1 root root    0 Oct 16 21:42 authorized_keys
+-rw------- 1 root root 2622 Oct 16 21:49 id_rsa
+-rw-r--r-- 1 root root  583 Oct 16 21:49 id_rsa.pub
+root@3628761-cj43039:~# cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFDa871x9xV+j1LPKbyb49xKWzd1dPtLApjBuD5cqOP2RZa9H6krvQxM8sQ4Cuf3gI38KBsn7A4xJZ91/K9qT9E08uotMr+jGFTs2vlbgZ4CpsmwLI35WMVd9RthdrH0k69Lc5Xysqzxb4IoZeLWNTpNPKeINadwme07tcBalbDKtkkT2utfihXuc+HTPZisjnIvjflrHK5WKw2ztep4nr9A7DNDWLGF3Q9/XuLM61dXC3pwse0AIxvB43q31fDgWgcwr28STo8ctUA8L21TRawvjbgMFe/Evcy8gqhLMDj6WQEafPX0m2dGuoOLrI88+8VkUgDMj4zF8JZ1RlOoYzQb8lzdx7RUgXIllVmpAJSI5Fl2o93CefeA4kefsWWUuNyC/FL5iyUiDE1kIX5k0KqCGZaEzmGskLv+w6AO6YsPI5/pU0yDOVH+idpzyr2gvImWllZiNEys3zJUwH+QuCy48obYgKHg9ySa44PtT+YYhyLf79LQF41TWcddJ5/YM= root@3628761-cj43039.twc1.net
+root@3628761-cj43039:~# ssh-keygen -t rsa -b 2048 -C "test@test.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa):
+/root/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:MuKMHshpMSoxJtuHKd7OGusFTXLhf4rbwPWfj8EmRcs test@test.com
+The key's randomart image is:
++---[RSA 2048]----+
+|   .             |
+|  . .            |
+| . +     .       |
+|  = .   o .      |
+|+= ..oo.SE       |
+|=***o.+oo        |
+|*=*=+. o +       |
+|+o*o+   + +      |
+|.=+= .   +..     |
++----[SHA256]-----+
+root@3628761-cj43039:~# ls -al ~/.ssh
+total 16
+drwx------ 2 root root 4096 Oct 16 21:49 .
+drwx------ 7 root root 4096 Oct 16 22:29 ..
+-rw------- 1 root root    0 Oct 16 21:42 authorized_keys
+-rw------- 1 root root 1876 Oct 16 22:31 id_rsa
+-rw-r--r-- 1 root root  395 Oct 16 22:31 id_rsa.pub
+root@3628761-cj43039:~# exit
+logout
+Connection to 80.68.156.82 closed.
+ 
